@@ -1,13 +1,111 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: 'Inter',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  background-color: #23252C;
+  color: #DCDCDC;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
+  margin: 45px auto;
+  border-radius: 10px;
+  background-color: #1A1B21;
+  overflow: hidden;
+}
+
+.card-body {
+  padding: 0 35px;
+}
+
+.introduction {
+  text-align: center;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 35px;
+}
+
+.btn {
+  padding-block: 9px;
+  border: 1px solid black;
+  border-radius: 6px;
+  width: 115px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #374151;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+.btn > svg {
+  margin-right: 10px;
+}
+
+.linkedin {
+  background-color: #5093E2;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  font-size: 10px;
+  color: #F5F5F5;
+}
+
+h1 {
+  font-size: 25px;
+  line-height: 30px;
+  margin: 20px 0 0 0;
+  color: #FFFFFF;
+}
+
+h2 {
+  font-size: 12.8px;
+  line-height: 15px;
+  color: #F3BF99;
+  font-weight: 400;
+  margin: 6px 0 0 0;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  margin: 25px 0 0 0;
+  color: #F5F5F5;
+}
+
+p {
+  font-size: 10px;
+  line-height: 150%;
+  margin: 5px 0 0 0;
+}
+
+footer {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer > a {
+  margin: 0 25px;
 }
